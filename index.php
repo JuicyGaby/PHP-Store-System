@@ -1,12 +1,6 @@
 <?php
 
 require_once('../Php_Store_System/connection/storeClass.php');
-
-$store = new MyStore();
-$users = $store->getUsers();
-
-print_r($users);
-
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +12,10 @@ print_r($users);
     <title>Gaby's Store</title>
 </head>
 <body>
-    <h1>Hello World!!</h1>
+    <div class="navbar">
+        <h2>Gaby's Store</h2>
+        <a href="login.php">Login</a>
+        <a href="addUser.php">Add User</a>
+    </div>
 </body>
 </html>
